@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades de Web</title>
+    <style>
+        /* Estilos CSS aqui, se necessário */
+    </style>
+</head>
+<body>
+    <h1>Atividades de Web</h1>
+
+    <!-- Atividade 1 - Links com Tag "a" -->
+    <h2>Atividade 1 - Links com Tag "a"</h2>
+    <p>
+        a) <a href="outra_pagina.html">click aqui e vamos para outra página, nesta mesma janela</a><br>
+        b) <a href="outra_pagina.html" target="_blank">click aqui e vamos para outra página abrindo outra janela</a><br>
+        c) <a href="mailto:exemplo@email.com">click aqui e vamos enviar um e-mail</a><br>
+    </p>
+    <p>
+        a) <a href="outra_pagina.html" title="Clique para ir a outra página">click aqui e vamos para outra página, nesta mesma janela</a><br>
+        b) <a href="outra_pagina.html" target="_blank" title="Clique para abrir outra janela">click aqui e vamos para outra página abrindo outra janela</a><br>
+        c) <a href="mailto:exemplo@email.com" title="Clique para enviar e-mail">click aqui e vamos enviar um e-mail</a><br>
+    </p>
+
+    <!-- Atividade 2 - Links Internos com IDs -->
+    <h2>Atividade 2 - Links Internos com IDs</h2>
+    <h2 id="section1">Seção 1</h2>
+    <p>Conteúdo da seção 1.</p>
+    <a href="#section1">Ir para Seção 1</a>
+
+    <h2 id="section2">Seção 2</h2>
+    <p>Conteúdo da seção 2.</p>
+    <a href="#section2">Ir para Seção 2</a>
+
+    <!-- Atividade 3 - CSS para Estilizar Links -->
+    <h2>Atividade 3 - CSS para Estilizar Links</h2>
+    <p><a href="#">Link de Exemplo</a></p>
+
+    <!-- Atividade 4 - Listas em HTML -->
+    <h2>Atividade 4 - Listas em HTML</h2>
+    <p>a) Lista não numerada:</p>
+    <ul>
+        <li>Exemplo 1</li>
+        <li>Exemplo 2</li>
+        <li>Exemplo 3</li>
+    </ul>
+
+    <p>b) Lista numerada:</p>
+    <ol>
+        <li>Exemplo 1</li>
+        <li>Exemplo 2</li>
+        <li>Exemplo 3</li>
+    </ol>
+
+    <p>c) Lista de Definição:</p>
+    <dl>
+        <dt>Termo 1</dt>
+        <dd>Definição 1</dd>
+        <dt>Termo 2</dt>
+        <dd>Definição 2</dd>
+    </dl>
+
+    <p>d)  Existem três tipos principais de listas em HTML: não numeradas (&lt;ul&gt;), numeradas (&lt;ol&gt;) e de definição (&lt;dl&gt;).</p>
+
+    <!-- Atividade 5 - Tabelas em HTML -->
+    <h2>Atividade 5 - Tabelas em HTML</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+                <th>Coluna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Exemplo 1</td>
+                <td>Exemplo 2</td>
+                <td>Exemplo 3</td>
+            </tr>
+            <tr>
+                <td>Exemplo 4</td>
+                <td>Exemplo 5</td>
+                <td>Exemplo 6</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Atividade 6 - Formulários em HTML -->
+    <h2>Atividade 6 - Formulários em HTML</h2>
+    <form action="processar_formulario.php" method="post">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required><br>
+
+        <label>Gênero:</label>
+        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10}" placeholder="1234567890" required><br>
+
+        <label for="endereco">Endereço:</label>
+        <textarea id="endereco" name="endereco" placeholder="Digite seu endereço aqui"></textarea><br>
+
+        <label for="curso">Curso de Interesse:</label>
+        <select id="curso" name="curso" required>
+            <option value="curso1">Curso 1</option>
+            <option value="curso2">Curso 2</option>
+            <option value="curso3">Curso 3</option>
+        </select><br>
+
+        <input type="checkbox" id="termos" name="termos" required>
+        <label for="termos">Aceito os Termos e Condições</label><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+    <!-- Atividade 7 - Imagens em HTML -->
+    <h2>Atividade 7 - Imagens em HTML</h2>
+    <img src="imgs/legumes/exemplo_legume.jpg" alt="Exemplo de Legume" width="200" height="150">
+    <img src="imgs/frutas/exemplo_fruta.jpg" alt="Exemplo de Fruta" width="200" height="150">
+    <img src="imgs/carnes/exemplo_carne.jpg" alt="Exemplo de Carne" width="200" height="150">
+
+    <!-- Atividade 8 - Galeria de Imagens -->
+    <h2>Atividade 8 - Galeria de Imagens</h2>
+    <ul>
+        <li>
+            <figure>
+                <img src="imagem1.jpg" alt="Imagem 1">
+                <figcaption>Legenda da Imagem 1</figcaption>
+                <a href="link1.html">Mais informações</a>
+            </figure>
+        </li>
+        <li>
+            <figure>
+                <img src="imagem2.jpg" alt="Imagem 2">
+                <figcaption>Legenda da Imagem 2</figcaption>
+                <a href="link2.html">Mais informações</a>
+            </figure>
+        </li>
+        <!-- Adicionar mais imagens -->
+    </ul>
+ <!-- Atividade 5 - Tabelas em HTML -->
+</body>
+</html>
